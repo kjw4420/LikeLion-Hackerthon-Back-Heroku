@@ -56,7 +56,7 @@ class StorySerializer(serializers.ModelSerializer):
     
     class Meta:
         model = Story
-        fields = ['id', 'title', 'content', 'pictures', 'createdAt', 'updatedAt', 'user_id', 'username', 'useremail', 'userimage', 'comments', 'image_likes']
+        fields = ['id', 'content', 'pictures', 'createdAt', 'updatedAt', 'user_id', 'username', 'useremail', 'userimage', 'comments', 'image_likes']
         read_only_fields = ['image_likes']
     
     def create(self, validated_data):
