@@ -48,7 +48,7 @@ INSTALLED_APPS = [
     'rest_framework', # DRF
     'corsheaders', #CORS
     'search',
-    'place',
+    
     # 설치한 라이브러리들
     'rest_framework.authtoken',
     'dj_rest_auth',

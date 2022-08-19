@@ -7,7 +7,6 @@ urlpatterns = [
     path('accounts/', include('accounts.urls')),
     path('social/', include('social.urls')),
     path('search/',include('search.urls')),
-    path('place/',include('place.urls')),
 ]
 
 
