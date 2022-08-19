@@ -20,6 +20,7 @@ class Socialring(models.Model):
         choices=ONOFF, max_length=50, null=True, blank=True
     )
     user = models.ForeignKey(User, on_delete=models.CASCADE, null=True) #id값으로 받아짐, 화면 노출X(getX), Post 요청만
+    content = models.TextField(null=True)
     image = models.ImageField(
         default=None, null=True, blank=True)
     meetdate = models.DateField(null=True)

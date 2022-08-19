@@ -14,8 +14,7 @@ class MySocialringSerializer(serializers.ModelSerializer):
     class Meta:
         model = Socialring
         ordering = ['created_date']
-        fields = ['id','user','title','location','image','category','type','meetdate','meettime','maxpeople','count','flag','user_jud', 'created_date','comments']
-        
+        fields = ['id','user','title','location','image','category','type','meetdate','meettime','maxpeople','count','flag','user_jud', 'created_date','comments','content']        
 class joinlistSerializer(serializers.ModelSerializer):
     
     class Meta:
