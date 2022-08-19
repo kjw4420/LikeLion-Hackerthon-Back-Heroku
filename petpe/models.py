@@ -4,7 +4,6 @@ from accounts.models import User
 # 이미지 여러개 업로드 가능한 기능 찾기
 class Story(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, related_name='story_owner')
-    title = models.CharField(max_length=50)
     content = models.TextField()
     createdAt = models.DateTimeField(auto_now_add=True, null=True)
     updatedAt = models.DateTimeField(auto_now=True, null=True)
