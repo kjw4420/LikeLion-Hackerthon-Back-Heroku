@@ -10,7 +10,7 @@ class Story(models.Model):
     image_likes = models.ManyToManyField(User, blank=True, related_name='like_stories')
     
     def __str__(self):
-        return self.title
+        return self.content
     
     class Meta:
         db_table = 'story'
