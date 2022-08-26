@@ -192,3 +192,8 @@ CSRF_TRUSTED_ORIGINS = [
 SESSION_COOKIE_SAMESITE = None
 
 # SESSION_COOKIE_SECURE = True
+
+# Heroku에서 PostgreSQL을 사용하기 위해서 필요한 코드.
+import dj_database_url
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(db_from_env)
