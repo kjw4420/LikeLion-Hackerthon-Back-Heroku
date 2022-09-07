@@ -92,7 +92,6 @@ https://oropet-backend.herokuapp.com/
 **데이터베이스**<br>
 <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=PostgreSQL&logoColor=white"/><br>
 **배포 및 관리**<br>
-<img src="https://img.shields.io/badge/Amazon_AWS-232F3E?style=flat-square&logo=Amazon AWS&logoColor=white"/>
 <img src="https://img.shields.io/badge/heroku-430098?style=flat-square&logo=heroku&logoColor=white">
 <br>
 
