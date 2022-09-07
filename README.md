@@ -93,6 +93,7 @@ https://oropet-backend.herokuapp.com/
 <img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white"/><br>
 **배포 및 관리**<br>
 <img src="https://img.shields.io/badge/Amazon_AWS-232F3E?style=flat-square&logo=Amazon AWS&logoColor=white"/>
+<img src="https://img.shields.io/badge/heroku-430098?style=for-the-badge&logo=bootstrap&logoColor=white">
 <br>
 
 ## 🚢 User Flow
