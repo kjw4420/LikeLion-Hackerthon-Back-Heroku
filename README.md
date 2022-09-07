@@ -82,6 +82,7 @@ React Hooks (useContext)<br>
 <br>
 
 ### Back-end
+https://oropet-backend.herokuapp.com/
 
 **언어**<br>
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white"/><br>
