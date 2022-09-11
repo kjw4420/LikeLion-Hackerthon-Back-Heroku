@@ -95,6 +95,56 @@ https://oropet-backend.herokuapp.com/
 <img src="https://img.shields.io/badge/heroku-430098?style=flat-square&logo=heroku&logoColor=white">
 <br>
 
+# 회원가입/계정
+
+## ⭐ 회원가입 / 로그인 / 로그아웃 / 유저 정보 ⭐
+
+| 요청 URL | 메서드 | 설명 |
+| --- | --- | --- |
+| http://3.34.21.153/accounts/registration/ | POST | 회원가입 요청합니다.    |
+| http://3.34.21.153/accounts/login/  | POST | 로그인을 요청합니다. |
+| http://3.34.21.153/accounts/logout/  | POST | 로그아웃을 요청합니다. |
+| http://3.34.21.153/ccounts/user/  ==⇒ 403 에러 | GET | 현재 로그인되어 있는 유저의 정보를 요청합니다. |
+| http://3.34.21.153/accounts/user/ | PATCH | 현재 로그인되어 있는 유저의 정보 수정을 요청합니다.  |
+| http://3.34.21.153/accounts/password/change/ | POST | 현재 로그인되어 있는 유저의 비밀번호 변경을 요청합니다. |
+| http://3.34.21.153/accounts/password/reset/ | POST | 현재 로그인되어 있는 유저의 비밀번호의 초기화를 요청합니다.  |
+| http://3.34.21.153/accounts/user/유저 id/ | GET | 유저 id의 프로필 정보를 요청합니다. |
+| http://3.34.21.153/search/?search=(검색값) | GET | Username의 검색 결과를 가져옵니다. |
+
+# 소셜링
+
+## ⭐ 소셜링 생성 / 소셜링 목록 / 소셜링 참여 ⭐
+
+| 요청 URL | 메서드 | 설명 |
+| --- | --- | --- |
+| http://3.34.21.153/social/socialring/ | POST | 소셜링을 생성합니다 |
+| http://3.34.21.153/social/socialring/  | GET | 게시된 모든 소셜링의 목록을 보여줍니다 |
+| http://3.34.21.153/social/socialring/pk =⇒정상작동 | GET | 해당 id 값을 가지는 소셜링의 상세 내용을 요청합니다 |
+| http://3.34.21.153/social/socialring/pk =⇒정상작동 | DELETE | 해당 id 값을 가지는 소셜링의 내용을 삭제합니다 |
+| http://3.34.21.153/social/socialring/pk | PATCH | 해당 id 값을 가지는 소셜링의 특정 상세정보를 수정을 요청합니다 |
+| http://3.34.21.153/social/socialring/pk/join ⇒ 403 error | POST | 로그인 유/무 및 인원수을 확인하여 소셜링 입장을 요청합니다 |
+| http://3.34.21.153/social/joinlist ⇒앞에서 사용불가 | GET | 소셜링의 참여한 모든 회원정보를 표시합니다 |
+| http://3.34.21.153/social/joinlist/pk  | GET | 해당 id 값을 가지는 소셜링 방의 회원정보를 보여줍니다 |
+| http://3.34.21.153/social/comments/pk ⇒ 404error | GET | 해당 id 값을 가지는 소셜링에 댓글을 요청합니다  |
+| http://3.34.21.153/social/comments/pk  | DELETE | 해당 id 값을 가지는 소셜링에 댓글을 삭제합니다 |
+| http://3.34.21.153/social/comments/ ⇒ 빈배열을 되돌려줌 (아마 달린댓글을 조회해준거같음) | POST | 소셜링에 댓글을 생성합니다 |
+
+# 스토리
+
+## ⭐ 스토리 생성 / 스토리 게시 / 스토리 삭제 ⭐
+
+| 요청 URL | 메서드 | 설명 |
+| --- | --- | --- |
+| http://3.34.21.153/story/ =⇒ 200을 돌려주지만 반영되지않음 | POST | 스토리를 게시합니다. |
+| http://3.34.21.153/story/  | GET | 게시된 모든 스토리의 목록을 요청합니다. |
+| http://3.34.21.153/story/스토리 id/ | GET | 해당 id 값을 가지는 스토리의 상세 내용을 요청합니다. |
+| http://3.34.21.153/story/스토리 id/ | PATCH | 해당 id 값을 가지는 스토리의 content 수정을 요청합니다. |
+| http://3.34.21.153/story/스토리 id/ | DELETE | 해당 id 값을 가지는 스토리의 삭제를 요청합니다. |
+| http://3.34.21.153/comments/  =⇒200을 돌려주지만 반영안됨 | POST | 스토리에 댓글을 요청합니다. (스토리 id 입력값 확인) |
+| http://3.34.21.153/comments/댓글 id/ | GET | 해당 id 값을 가지는 댓글의 상세 내용을 요청합니다. |
+| http://3.34.21.153/comments/댓글 id/ | DELETE | 해당 id 값을 가지는 댓글의 삭제를 요청합니다. |
+| http://3.34.21.153/storylike/스토리id/ | POST | 게시물의 좋아요 요청을 보낸다. 이미 좋아요 누른 상태에서 다시 같은 요청을 보내면 좋아요가 취소됩니다.  |
+
 ## 🚢 User Flow
 
 <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdjmPlG%2FbtrKAiu89JL%2FgMnmK4aeMi4t96NVZhCpCk%2Fimg.png"/>
