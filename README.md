@@ -97,8 +97,6 @@ https://oropet-backend.herokuapp.com/
 
 # 📙 API 문서
 
-# 회원가입/계정
-
 ## ⭐ 회원가입 / 로그인 / 로그아웃 / 유저 정보 ⭐
 
 | 요청 URL | 메서드 | 설명 |
@@ -112,8 +110,6 @@ https://oropet-backend.herokuapp.com/
 | http://3.34.21.153/accounts/password/reset/ | POST | 현재 로그인되어 있는 유저의 비밀번호의 초기화를 요청합니다.  |
 | http://3.34.21.153/accounts/user/유저 id/ | GET | 유저 id의 프로필 정보를 요청합니다. |
 | http://3.34.21.153/search/?search=(검색값) | GET | Username의 검색 결과를 가져옵니다. |
-
-# 소셜링
 
 ## ⭐ 소셜링 생성 / 소셜링 목록 / 소셜링 참여 ⭐
 
@@ -130,8 +126,6 @@ https://oropet-backend.herokuapp.com/
 | http://3.34.21.153/social/comments/pk ⇒ 404error | GET | 해당 id 값을 가지는 소셜링에 댓글을 요청합니다  |
 | http://3.34.21.153/social/comments/pk  | DELETE | 해당 id 값을 가지는 소셜링에 댓글을 삭제합니다 |
 | http://3.34.21.153/social/comments/ ⇒ 빈배열을 되돌려줌 (아마 달린댓글을 조회해준거같음) | POST | 소셜링에 댓글을 생성합니다 |
-
-# 스토리
 
 ## ⭐ 스토리 생성 / 스토리 게시 / 스토리 삭제 ⭐
 
